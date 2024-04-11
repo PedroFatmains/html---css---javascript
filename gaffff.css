@@ -1,0 +1,147 @@
+body {
+
+  /*border: 2px solid red;*/
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  margin: 0;
+  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  background-color: black; 
+  }
+
+
+
+.header {
+  /*border: 2px solid blue;*/
+  text-align: center;
+  background-color: rgb(36, 36, 36);
+  background-size: cover;
+  background-position: top center;
+  height: 100px;
+  object-fit: cover;
+}
+
+.flexbox-container {
+  display: flex; /* ativa conjunto flexbox-pai para incluir os itens*/
+  flex-flow: row nowrap; /*função shorthand que define como os containers-filhos irão se comportar, nesse caso esquerda pra direita (row) e não quebrar linha (nowrap)*/
+  font-family: arial; /* define fonte de todo o container pai*/
+  font-size: 15px;
+  color: white;
+  background-color: rgb(49, 49, 49);
+  height: 60px;
+  background-size: cover;
+  position: sticky; /* estudar */
+  top: 0px; /* estudar */
+  z-index: 1; /* estudar */
+  opacity: 0.8;  /* estudar */
+  background-position: top center;
+}
+
+.flex-home {
+  margin-top: 20px; /**/
+  margin-right: 30px;
+  margin-left: 270px;
+  order: 1; /**/
+  font-weight: bold;
+
+}
+
+.flex-forum {
+  margin-top: 20px; /**/
+  margin-right: 30px;
+  order: 2; /**/
+  font-weight: bold;
+
+}
+
+.flex-fair {
+  margin-top: 20px;
+  margin-right: 30px;
+  order: 3; /**/
+  font-weight: bold;
+  
+}
+.flex-fun {
+  margin-top: 20px;
+  margin-right: 30px;
+  order: 4; /**/
+  font-weight: bold;
+
+}
+
+.flex-food {
+  margin-top: 20px;
+  margin-right: 30px;
+  order: 5; /**/
+  font-weight: bold;
+}
+
+.flex-data {
+  margin-top: 20px;
+  margin-left: 250px;
+  order: 6; /**/
+  font-weight: bold;
+  color: rgb(190, 230, 71);
+}
+
+.flex-world {
+  margin-top: 18px;
+  margin-left: 245px; 
+  order: 7;
+  
+}
+
+.flex-patrocinador {
+  color: rgb(190, 230, 71);
+  margin-top: 10px;
+  margin-left: 30px; 
+  order: 8;
+  font-weight: bold;
+  border: 2px solid rgb(190, 230, 71);
+  border-radius: 7px;  /* estudar */
+  width: 191px;
+  height: 20px;
+  padding: 6px;
+}
+
+.image {
+  border: 2px groove blue;
+  height: 570px;
+}
+
+.image img {
+  width: 1900px;
+  height: 570px;
+  background-size: cover;
+  background-position: top center;
+  object-fit: cover;
+}
+
+
+#slider {
+  width: 80%;
+  max-width: 500px;
+  height: 25vw;
+  max-height: 150px;
+
+  position: relative;
+}
+
+#slider img {
+  opacity: 0;
+
+  position: absolute;
+
+  width: 1900px;
+  height: 570px;
+
+  object-fit: cover;
+
+  transition: opacity 800ms;
+}
+
+#slider img.selected { 
+  opacity: 1;
+}
